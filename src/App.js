@@ -7,13 +7,13 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { MenuBlock } from "./components/Menu";
 import logo from "./img/iz.png";
 
-const styles = makeStyles({
+const blockStyles = makeStyles({
   buttonOpen: { position: "absolute", right: 0, top: 20 },
   block: { paddingTop: "18px" }
 });
 
 export const App = () => {
-  const styles = styles();
+  const styles = blockStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
 

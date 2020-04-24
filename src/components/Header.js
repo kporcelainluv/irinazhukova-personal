@@ -13,7 +13,7 @@ const headerStyles = makeStyles({
 export const Header = ({handleClick, handleClose, anchorEl}) => {
   const styles = headerStyles();
   return (
-    <header>
+    <div>
       <img
         src={logo}
         alt="логотип визажиста ирины жуковой"
@@ -35,6 +35,6 @@ export const Header = ({handleClick, handleClose, anchorEl}) => {
         <MoreVertIcon />
       </IconButton>
       <MenuBlock handleClose={handleClose} anchorEl={anchorEl} />
-    </header>
+    </div>
   );
 };

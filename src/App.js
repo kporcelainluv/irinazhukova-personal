@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { Container, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { Header } from "./components/Header";
 import { Courses } from "./components/Courses";
@@ -28,18 +29,22 @@ export const App = () => {
   };
 
   return (
-    <Container maxWidth="xl" classes={{ root: styles.container }}>
-      <Box display="flex" justifyContent="center" className={styles.block}>
-        <Header
-          handleClick={handleClick}
-          handleClose={handleClose}
-          anchorEl={anchorEl}
-        />
-      </Box>
-      <Makeup />
-      <Courses />
-      <Footer />
-      <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
-    </Container>
+    <Fragment>
+      <CssBaseline />
+
+      <Container maxWidth="xl" classes={{ root: styles.container }}>
+        <Box display="flex" justifyContent="center" className={styles.block}>
+          <Header
+            handleClick={handleClick}
+            handleClose={handleClose}
+            anchorEl={anchorEl}
+          />
+        </Box>
+        <Makeup />
+        <Courses />
+        <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
+        <Footer />
+      </Container>
+    </Fragment>
   );
 };

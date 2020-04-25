@@ -1,5 +1,5 @@
 import React from "react";
-
+import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,7 +10,9 @@ import { contacts } from "../consts";
 import logo from "../img/iz.png";
 
 const footerStyles = makeStyles({
-  container: {},
+  container: {
+    marginTop: "50px"
+  },
   root: {
     flexGrow: 1,
     margin: "20px 0",
@@ -50,7 +52,11 @@ const footerStyles = makeStyles({
 export const Footer = () => {
   const styles = footerStyles();
   return (
-    <div>
+    <Container
+      classes={{
+        root: styles.container
+      }}
+    >
       <img
         src={logo}
         alt="логотип визажиста ирины жуковой"
@@ -89,6 +95,6 @@ export const Footer = () => {
       <Typography variant="h6" display={"block"} className={styles.copyright}>
         © 2020 Ирина Жукова
       </Typography>
-    </div>
+    </Container>
   );
 };

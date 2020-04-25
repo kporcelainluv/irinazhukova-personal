@@ -1,7 +1,7 @@
 export const makeup = {
   name: "Макияж",
-  price: "3000",
-  intro: "макияж проводится там-то. Выезд оплачивается отдельно"
+  price: "3000 руб / 1 чаc",
+  description: ["Выезд оплачивается отдельно"]
 };
 
 export const lessons = [

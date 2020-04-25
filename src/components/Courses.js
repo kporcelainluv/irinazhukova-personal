@@ -8,7 +8,7 @@ import Divider from "@material-ui/core/Divider";
 
 import { lessons } from "../consts";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     marginTop: "20px"
@@ -50,14 +50,14 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     marginBottom: "65px"
   }
-}));
+});
 
 export const Courses = () => {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.root} spacing={2} justify={"center"}>
-      <Typography variant="h3">УРОКИ</Typography>
+      <Typography variant="h3">Уроки</Typography>
       {lessons.map(lesson => (
         <Grid key={lesson.name}>
           <Paper className={classes.paper}>

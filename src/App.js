@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Container, Box } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 import { Header } from "./components/Header";
-import { makeStyles } from "@material-ui/core/styles";
 import { Courses } from "./components/Courses";
+import { Makeup } from "./components/Makeup";
 
 const appStyles = makeStyles({
   buttonOpen: { position: "absolute", right: 0, top: 20 },
@@ -30,6 +31,7 @@ export const App = () => {
           anchorEl={anchorEl}
         />
       </Box>
+      <Makeup />
       <Courses />
     </Container>
   );

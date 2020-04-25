@@ -61,6 +61,7 @@ export const MenuBlock = ({ anchorEl, handleClose }) => {
             <CloseIcon />
           </IconButton>
         </MenuItem>
+        <MenuItem>Макияж</MenuItem>
         <MenuItem>Курсы</MenuItem>
         <MenuItem>Контакты</MenuItem>
       </MenuList>

@@ -41,7 +41,6 @@ const footerStyles = makeStyles({
   },
   copyright: {
     opacity: "0.3",
-    color: "#2a2a2a",
     fontSize: "16px",
     fontWeight: "400",
     lineHeight: "21px",
@@ -83,9 +82,7 @@ export const Footer = () => {
           {contacts.map(contact => {
             return (
               <Grid key={contact.name} className={styles.link}>
-                <Link href={contact.link} color={"#2a2a2a"}>
-                  {contact.name}
-                </Link>
+                <Link href={contact.link}>{contact.name}</Link>
               </Grid>
             );
           })}

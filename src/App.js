@@ -4,14 +4,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { Header } from "./components/Header";
-import { Courses } from "./components/Courses";
+import { Lessons } from "./components/Lessons";
 import { Makeup } from "./components/Makeup";
 import { Footer } from "./components/Footer";
 import { InstaGrid } from "./components/Portfolio";
 
 const appStyles = makeStyles({
   container: {
-    padding: 0
+    padding: 0,
+    fontFamily: "Tahoma, sans-serif"
   },
   buttonOpen: { position: "absolute", right: 0, top: 20 },
   block: { paddingTop: "18px" }
@@ -41,7 +42,7 @@ export const App = () => {
           />
         </Box>
         <Makeup />
-        <Courses />
+        <Lessons />
         <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
         <Footer />
       </Container>

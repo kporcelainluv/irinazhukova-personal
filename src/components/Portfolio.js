@@ -17,7 +17,7 @@ const portfolioStyles = makeStyles({
 export const InstaGrid = withInstagramFeed(({ media, account }) => {
   const styles = portfolioStyles();
   return (
-    <Grid container spacing={16} className={styles.wrapper}>
+    <Grid container className={styles.wrapper}>
       {media &&
         media.map(({ displayImage, id, postLink, accessibilityCaption }) => (
           <Grid item xs={6} md={2} key={id || displayImage}>

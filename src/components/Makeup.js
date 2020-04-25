@@ -69,25 +69,21 @@ export const Makeup = () => {
           </Typography>
           <Divider />
           <Typography
-            variant="h7"
+            variant="h6"
             display={"block"}
             className={classes.lessonIntro}
           >
             {makeup.intro}
           </Typography>
           <Typography
-            variant="h7"
+            variant="h6"
             display={"block"}
             className={classes.lessonPrice}
           >
             {makeup.price}
           </Typography>
 
-          <Button
-            variant="contained"
-            color="#d8cfc5"
-            className={classes.lessonButton}
-          >
+          <Button variant="contained" className={classes.lessonButton}>
             Подробнее
           </Button>
         </Paper>

@@ -73,8 +73,8 @@ export const lessons = [
 ];
 
 export const contacts = [
-  { name: "vk", link: "http://localhost:3000/" },
-  { name: "instagram", link: "http://localhost:3000/" },
-  { name: "whatsapp", link: "http://localhost:3000/" },
-  { name: "telegram", link: "http://localhost:3000/" }
+  { name: "vk", link: "https://vk.com/zhukovairinal" },
+  { name: "instagram", link: "https://www.instagram.com/zhukovairinal/" },
+  { name: "whatsapp", link: "https://api.whatsapp.com/send?phone=9036911638" },
+  { name: "telegram", link: "https://teleg.run/zhukovairinal" }
 ];

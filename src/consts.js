@@ -70,3 +70,10 @@ export const lessons = [
     ]
   }
 ];
+
+export const contacts = [
+  { name: "vk", link: "http://localhost:3000/" },
+  { name: "instagram", link: "http://localhost:3000/" },
+  { name: "whatsapp", link: "http://localhost:3000/" },
+  { name: "telegram", link: "http://localhost:3000/" }
+];

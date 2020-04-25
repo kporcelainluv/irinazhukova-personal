@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Header } from "./components/Header";
 import { Courses } from "./components/Courses";
 import { Makeup } from "./components/Makeup";
+import { Footer } from "./components/Footer";
 
 const appStyles = makeStyles({
   buttonOpen: { position: "absolute", right: 0, top: 20 },
@@ -33,6 +34,7 @@ export const App = () => {
       </Box>
       <Makeup />
       <Courses />
+      <Footer />
     </Container>
   );
 };

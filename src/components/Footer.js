@@ -23,7 +23,6 @@ const footerStyles = makeStyles({
     textDecoration: "none",
     fontSize: "25px",
     lineHeight: "30px",
-    letterSpacing: "1.3px",
     fontWeight: "800",
     color: "#393c2b",
     display: "block"

@@ -13,7 +13,8 @@ import ListItem from "@material-ui/core/ListItem";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    marginTop: "20px"
+    marginTop: "20px",
+    marginBottom: "65px"
   },
   paper: {
     width: 280,
@@ -31,8 +32,7 @@ const useStyles = makeStyles({
     lineHeight: "22px",
     letterSpacing: "-0.09px",
     minHeight: "auto",
-    marginTop: "10px",
-    marginBottom: "25px"
+    margin: "10px 0"
   },
   lessonPrice: {
     fontSize: "16px",
@@ -49,8 +49,7 @@ const useStyles = makeStyles({
     textTransform: "uppercase",
     textAlign: "center",
     cursor: "pointer",
-    width: "100%",
-    marginBottom: "65px"
+    width: "100%"
   }
 });
 
@@ -97,19 +96,17 @@ export const Makeup = () => {
             Подробнее
           </Button>
 
-          {opened &&
-            makeup.description.map(element => {
-              return (
-                <List
-                  key={element}
-                  variant="h6"
-                  display={"block"}
-                  className={classes.additionalInfo}
-                >
-                  <ListItem>{element}</ListItem>
-                </List>
-              );
-            })}
+          {opened && (
+            <List
+              variant="h6"
+              display={"block"}
+              className={classes.additionalInfo}
+            >
+              {makeup.description.map(element => {
+                return <ListItem key={element}>{element}</ListItem>;
+              })}
+            </List>
+          )}
         </Paper>
       </Grid>
     </Grid>

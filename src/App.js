@@ -6,8 +6,12 @@ import { Header } from "./components/Header";
 import { Courses } from "./components/Courses";
 import { Makeup } from "./components/Makeup";
 import { Footer } from "./components/Footer";
+import { InstaGrid } from "./components/Portfolio";
 
 const appStyles = makeStyles({
+  container: {
+    padding: 0
+  },
   buttonOpen: { position: "absolute", right: 0, top: 20 },
   block: { paddingTop: "18px" }
 });
@@ -24,7 +28,7 @@ export const App = () => {
   };
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" classes={{ root: styles.container }}>
       <Box display="flex" justifyContent="center" className={styles.block}>
         <Header
           handleClick={handleClick}
@@ -35,6 +39,7 @@ export const App = () => {
       <Makeup />
       <Courses />
       <Footer />
+      <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
     </Container>
   );
 };

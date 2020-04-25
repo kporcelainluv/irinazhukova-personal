@@ -5,12 +5,15 @@ import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
 const lessonStyles = makeStyles({
   paper: {
     width: 280,
     boxShadow: "none",
-    fontFamily: "Tahoma, sans-serif"
+    fontFamily: "Tahoma, sans-serif",
+    marginBottom: "65px"
   },
   lessonName: {
     fontSize: "30px",
@@ -42,13 +45,13 @@ const lessonStyles = makeStyles({
     textTransform: "uppercase",
     textAlign: "center",
     cursor: "pointer",
-    width: "100%",
-    marginBottom: "65px"
-  }
+    width: "100%"
+  },
+  additionalInfo: {}
 });
 
 export const Lesson = ({ lesson }) => {
-  const { name, intro, price } = lesson;
+  const { name, intro, price, description } = lesson;
   const classes = lessonStyles();
 
   const [opened, setOpened] = useState(false);
@@ -79,16 +82,32 @@ export const Lesson = ({ lesson }) => {
         >
           {price}
         </Typography>
+        {description && (
+          <Button
+            variant="contained"
+            className={classes.lessonButton}
+            onClick={() => {
+              setOpened(!opened);
+            }}
+          >
+            Подробнее
+          </Button>
+        )}
 
-        <Button
-          variant="contained"
-          className={classes.lessonButton}
-          onClick={() => {
-            console.log("clciked", name);
-          }}
-        >
-          Подробнее
-        </Button>
+        {opened &&
+          description &&
+          description.map(element => {
+            return (
+              <List
+                key={element}
+                variant="h6"
+                display={"block"}
+                className={classes.additionalInfo}
+              >
+                <ListItem>{element}</ListItem>
+              </List>
+            );
+          })}
       </Paper>
     </Grid>
   );

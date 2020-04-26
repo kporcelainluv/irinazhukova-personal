@@ -13,7 +13,7 @@ import ListItem from "@material-ui/core/ListItem";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    marginTop: "20px",
+    marginTop: "40px",
     marginBottom: "65px"
   },
   paper: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     lineHeight: "34px",
     marginTop: "8px",
     letterSpacing: "-0.2px",
-    marginBottom: "22px"
+    marginBottom: "10px"
   },
   lessonIntro: {
     fontSize: "18px",
@@ -50,6 +50,15 @@ const useStyles = makeStyles({
     textAlign: "center",
     cursor: "pointer",
     width: "100%"
+  },
+  heading: {
+    fontFamily: "Tahoma, sans-serif",
+    fontSize: "34px",
+    lineHeight: "34px",
+    marginTop: "8px",
+    letterSpacing: "-0.2px",
+    width: " 280px",
+    margin: "0 auto 22px"
   }
 });
 
@@ -58,57 +67,66 @@ export const Makeup = () => {
 
   const [opened, setOpened] = useState(false);
   return (
-    <Grid container className={classes.root} spacing={2} justify={"center"}>
-      <Typography variant="h3">Макияж</Typography>
-      <Grid>
-        <Paper className={classes.paper}>
-          <img src="http://placekitten.com/g/280/170" alt="" />
-          <Typography
-            variant="h4"
-            display={"block"}
-            classes={{ root: classes.lessonName }}
-          >
-            {makeup.name}
-          </Typography>
-          <Divider />
-          <Typography
-            variant="h6"
-            display={"block"}
-            className={classes.lessonIntro}
-          >
-            {makeup.intro}
-          </Typography>
-          <Typography
-            variant="h6"
-            display={"block"}
-            className={classes.lessonPrice}
-          >
-            {makeup.price}
-          </Typography>
-
-          <Button
-            variant="contained"
-            className={classes.lessonButton}
-            onClick={() => {
-              setOpened(!opened);
-            }}
-          >
-            Подробнее
-          </Button>
-
-          {opened && (
-            <List
+    <div className={classes.root}>
+      {/*<Typography*/}
+      {/*  variant="h2"*/}
+      {/*  align={"left"}*/}
+      {/*  display={"block"}*/}
+      {/*  classes={{ root: classes.heading }}*/}
+      {/*>*/}
+      {/*  Макияж*/}
+      {/*</Typography>*/}
+      <Grid container spacing={2} justify={"center"}>
+        <Grid>
+          <Paper className={classes.paper}>
+            <img src="http://placekitten.com/g/280/170" alt="" />
+            <Typography
+              variant="h4"
+              display={"block"}
+              classes={{ root: classes.lessonName }}
+            >
+              {makeup.name}
+            </Typography>
+            <Divider />
+            <Typography
               variant="h6"
               display={"block"}
-              className={classes.additionalInfo}
+              className={classes.lessonIntro}
             >
-              {makeup.description.map(element => {
-                return <ListItem key={element}>{element}</ListItem>;
-              })}
-            </List>
-          )}
-        </Paper>
+              {makeup.intro}
+            </Typography>
+            <Typography
+              variant="h6"
+              display={"block"}
+              className={classes.lessonPrice}
+            >
+              {makeup.price}
+            </Typography>
+
+            <Button
+              variant="contained"
+              className={classes.lessonButton}
+              onClick={() => {
+                setOpened(!opened);
+              }}
+            >
+              Подробнее
+            </Button>
+
+            {opened && (
+              <List
+                variant="h6"
+                display={"block"}
+                className={classes.additionalInfo}
+              >
+                {makeup.description.map(element => {
+                  return <ListItem key={element}>{element}</ListItem>;
+                })}
+              </List>
+            )}
+          </Paper>
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 };

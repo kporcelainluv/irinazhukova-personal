@@ -15,13 +15,13 @@ const lessonStyles = makeStyles({
     marginBottom: "65px"
   },
   lessonName: {
-    fontSize: "30px",
+    fontSize: "28px",
     lineHeight: "34px",
     letterSpacing: "-0.2px",
     margin: "10px 0"
   },
   lessonIntro: {
-    fontSize: "18px",
+    fontSize: "15px",
     lineHeight: "22px",
     letterSpacing: "-0.09px",
     minHeight: "auto",
@@ -29,7 +29,7 @@ const lessonStyles = makeStyles({
   },
   lessonPrice: {
     fontSize: "16px",
-    fontWeight: "400",
+    fontWeight: "600",
     lineHeight: "28px",
     textTransform: "uppercase",
     marginBottom: " 27px"
@@ -48,15 +48,15 @@ const lessonStyles = makeStyles({
 });
 
 export const Lesson = ({ lesson }) => {
-  const { name, intro, price, description, learns } = lesson;
+  const { name, intro, price, description, learns, imgLink } = lesson;
   const classes = lessonStyles();
 
   const [opened, setOpened] = useState(false);
 
   return (
-    <Grid>
+    <Grid container justify={"center"}>
       <Paper className={classes.paper}>
-        <img src="http://placekitten.com/g/280/170" alt="" />
+        <img src={imgLink} alt="" height={170} width={280} />
         <Typography
           variant="h4"
           display={"block"}

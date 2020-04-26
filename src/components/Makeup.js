@@ -79,7 +79,7 @@ export const Makeup = () => {
       <Grid container spacing={2} justify={"center"}>
         <Grid>
           <Paper className={classes.paper}>
-            <img src="http://placekitten.com/g/280/170" alt="" />
+            <img src={makeup.imgLink} alt="" height={170} width={280} />
             <Typography
               variant="h4"
               display={"block"}

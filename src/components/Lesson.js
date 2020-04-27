@@ -59,7 +59,7 @@ export const Lesson = ({ lesson }) => {
   } = lesson;
   const classes = lessonStyles();
 
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
   return (
     <Grid container justify={"center"}>
       <Paper className={classes.paper}>

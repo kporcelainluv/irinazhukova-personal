@@ -53,6 +53,9 @@ const useStyles = makeStyles({
 
   listItem: {
     padding: "6px 16px 6px 0"
+  },
+  img: {
+    objectFit: "cover"
   }
 });
 
@@ -65,7 +68,13 @@ export const Makeup = () => {
       <Grid container spacing={2} justify={"center"}>
         <Grid>
           <Paper className={classes.paper}>
-            <img src={makeup.imgLink} alt="" height={170} width={280} />
+            <img
+              src={makeup.imgLink}
+              alt=""
+              height={280}
+              width={280}
+              className={classes.img}
+            />
             <Typography
               variant="h2"
               display={"block"}

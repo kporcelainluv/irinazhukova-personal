@@ -44,7 +44,10 @@ const lessonStyles = makeStyles({
     cursor: "pointer",
     width: "100%"
   },
-  additionalInfo: {}
+  additionalInfo: {},
+  img: {
+    objectFit: "cover"
+  }
 });
 
 export const Lesson = ({ lesson }) => {
@@ -63,7 +66,13 @@ export const Lesson = ({ lesson }) => {
   return (
     <Grid container justify={"center"}>
       <Paper className={classes.paper}>
-        <img src={imgLink} alt="" height={170} width={280} />
+        <img
+          src={imgLink}
+          alt=""
+          height={280}
+          width={280}
+          className={classes.img}
+        />
         <Typography
           variant="h2"
           display={"block"}

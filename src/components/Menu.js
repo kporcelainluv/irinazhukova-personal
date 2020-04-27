@@ -29,7 +29,7 @@ export const MenuBlock = ({ anchorEl, handleClose }) => {
       open={opened}
       PaperProps={{
         style: {
-          width: "100%",
+          width: "320px",
           maxWidth: "100%",
           top: 0,
           left: 0,

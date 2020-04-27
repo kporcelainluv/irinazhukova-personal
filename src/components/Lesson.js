@@ -48,16 +48,24 @@ const lessonStyles = makeStyles({
 });
 
 export const Lesson = ({ lesson }) => {
-  const { name, intro, price, description, learns, imgLink } = lesson;
+  const {
+    name,
+    intro,
+    price,
+    description,
+    learns,
+    imgLink,
+    base = undefined
+  } = lesson;
   const classes = lessonStyles();
 
-  const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(true);
   return (
     <Grid container justify={"center"}>
       <Paper className={classes.paper}>
         <img src={imgLink} alt="" height={170} width={280} />
         <Typography
-          variant="h4"
+          variant="h2"
           display={"block"}
           classes={{ root: classes.lessonName }}
         >
@@ -65,14 +73,14 @@ export const Lesson = ({ lesson }) => {
         </Typography>
         <Divider />
         <Typography
-          variant="h6"
+          variant="h3"
           display={"block"}
           className={classes.lessonIntro}
         >
           {intro}
         </Typography>
         <Typography
-          variant="h6"
+          variant="h4"
           display={"block"}
           className={classes.lessonPrice}
         >
@@ -92,12 +100,13 @@ export const Lesson = ({ lesson }) => {
 
         {opened && description && (
           <Description
-            heading={" Что мы делаем? - урок проходит в 3 этапа:"}
+            heading={" Что мы делаем? "}
             list={description}
+            base={base}
           />
         )}
         {opened && learns && (
-          <Description heading={"Вы научитесь:"} list={learns} />
+          <Description heading={"Вы научитесь:"} list={learns} base={base} />
         )}
       </Paper>
     </Grid>

@@ -13,7 +13,8 @@ const appStyles = makeStyles({
   container: {
     padding: 0,
     fontFamily: "Tahoma, sans-serif",
-    backgroundColor: "white"
+    backgroundColor: "white",
+    maxWidth: "320px"
   },
   buttonOpen: { position: "absolute", right: 0, top: 20 },
   block: { paddingTop: "18px" }

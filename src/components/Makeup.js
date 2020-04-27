@@ -21,14 +21,13 @@ const useStyles = makeStyles({
     boxShadow: "none"
   },
   lessonName: {
-    fontSize: "30px",
+    fontSize: "28px",
     lineHeight: "34px",
-    marginTop: "8px",
     letterSpacing: "-0.2px",
-    marginBottom: "10px"
+    margin: "10px 0"
   },
   lessonIntro: {
-    fontSize: "18px",
+    fontSize: "15px",
     lineHeight: "22px",
     letterSpacing: "-0.09px",
     minHeight: "auto",
@@ -36,7 +35,7 @@ const useStyles = makeStyles({
   },
   lessonPrice: {
     fontSize: "16px",
-    fontWeight: "400",
+    fontWeight: "600",
     lineHeight: "28px",
     textTransform: "uppercase",
     marginBottom: " 27px"
@@ -51,14 +50,9 @@ const useStyles = makeStyles({
     cursor: "pointer",
     width: "100%"
   },
-  heading: {
-    fontFamily: "Tahoma, sans-serif",
-    fontSize: "34px",
-    lineHeight: "34px",
-    marginTop: "8px",
-    letterSpacing: "-0.2px",
-    width: " 280px",
-    margin: "0 auto 22px"
+
+  listItem: {
+    padding: "6px 16px 6px 0"
   }
 });
 
@@ -68,20 +62,12 @@ export const Makeup = () => {
   const [opened, setOpened] = useState(false);
   return (
     <div className={classes.root}>
-      {/*<Typography*/}
-      {/*  variant="h2"*/}
-      {/*  align={"left"}*/}
-      {/*  display={"block"}*/}
-      {/*  classes={{ root: classes.heading }}*/}
-      {/*>*/}
-      {/*  Макияж*/}
-      {/*</Typography>*/}
       <Grid container spacing={2} justify={"center"}>
         <Grid>
           <Paper className={classes.paper}>
             <img src={makeup.imgLink} alt="" height={170} width={280} />
             <Typography
-              variant="h4"
+              variant="h2"
               display={"block"}
               classes={{ root: classes.lessonName }}
             >
@@ -89,14 +75,14 @@ export const Makeup = () => {
             </Typography>
             <Divider />
             <Typography
-              variant="h6"
+              variant="h3"
               display={"block"}
               className={classes.lessonIntro}
             >
               {makeup.intro}
             </Typography>
             <Typography
-              variant="h6"
+              variant="h4"
               display={"block"}
               className={classes.lessonPrice}
             >
@@ -115,12 +101,16 @@ export const Makeup = () => {
 
             {opened && (
               <List
-                variant="h6"
+                variant="h2"
                 display={"block"}
                 className={classes.additionalInfo}
               >
-                {makeup.description.map(element => {
-                  return <ListItem key={element}>{element}</ListItem>;
+                {makeup.description.map((element, index) => {
+                  return (
+                    <ListItem className={classes.listItem} key={element}>
+                      {index + 1}. {element}
+                    </ListItem>
+                  );
                 })}
               </List>
             )}

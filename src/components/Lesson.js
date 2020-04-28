@@ -115,7 +115,7 @@ export const Lesson = ({ lesson }) => {
           />
         )}
         {opened && learns && (
-          <Description heading={"Вы научитесь:"} list={learns} base={base} />
+          <Description heading={"Вы научитесь:"} list={learns} />
         )}
       </Paper>
     </Grid>

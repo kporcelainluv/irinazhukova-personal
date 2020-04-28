@@ -6,6 +6,88 @@ export const makeup = {
     "https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/17663640_1510395392312541_9189455191219372032_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=MROLPdNmgVgAX_mJ6kM&oh=93b935c1c43b42edfd5c07b24ebbadd9&oe=5ED0DF92"
 };
 
+export const makeup2 = [
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink:
+      "https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/17663640_1510395392312541_9189455191219372032_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=MROLPdNmgVgAX_mJ6kM&oh=93b935c1c43b42edfd5c07b24ebbadd9&oe=5ED0DF92"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img10.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img11.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img12.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img13.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img14.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img21.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img22.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img23.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img24.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img25.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img26.jpg"
+  },
+  {
+    name: "Макияж",
+    price: "3000 руб / 1 чаc",
+    description: ["Выезд оплачивается отдельно"],
+    imgLink: "imgs/img27.jpg"
+  }
+];
+
 export const lessons = [
   {
     name: "Мой макияж на каждый день",
@@ -23,9 +105,9 @@ export const lessons = [
       "Подчеркивать цвет глаз с помощью помады, румян и теней",
       "Натурально оформлять брови;"
     ],
-    imgLink:
-      "https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/70539545_2302000273256138_3859453308236823495_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=lx0oQf9toyUAX_kgGBW&oh=ca05a8078b38266328ee90c10e3a181d&oe=5ED104CC"
+    imgLink: "imgs/img2.jpg"
   },
+
   {
     name: "Дневной макияж с трансформацией в вечерний",
     price: "6000 руб / 3 часа",
@@ -73,16 +155,14 @@ export const lessons = [
       "Подберем консилер и пудру",
       "Научимся правильно наносить подобранные продукты"
     ],
-    imgLink:
-      "https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/23498670_2030129687274313_8909977717898739712_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=m4WvnwS6cmQAX8rtGfd&oh=d7c36eb9b5f7cd5cae65d4e805f3482f&oe=5ED13107"
+    imgLink: "imgs/img3.jpg"
   },
   {
     name: "Дополнительный урок",
     price: "4500 руб / 2 часа",
     intro:
       "Вы можете выбрать любой макияж вашего настроения или я предложу максимально подходящий вам. Мы подберем цвета и текстуры, необходимые для создания мейкапа вашей мечты, но которые подойдут именно вам.",
-    imgLink:
-      "https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/13408768_1745911295653932_122722046_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100&_nc_ohc=I0G3CzDlM_cAX_PH6Pu&oh=81f8f43fb4b615b3ef704cda6366f4d3&oe=5ED2572C"
+    imgLink: "imgs/img4.jpg"
   }
 ];
 

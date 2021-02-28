@@ -50,14 +50,14 @@ export const Lesson = ({ lesson }) => {
         <Typography
           variant="h3"
           display={"block"}
-          className={classes.lessonIntro}
+          classes={{ root: classes.lessonIntro }}
         >
           {intro}
         </Typography>
         <Typography
           variant="h4"
           display={"block"}
-          className={classes.lessonPrice}
+          classes={{ root: classes.lessonPrice }}
         >
           {price}
         </Typography>

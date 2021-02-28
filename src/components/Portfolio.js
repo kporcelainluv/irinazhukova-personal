@@ -13,13 +13,7 @@ const portfolioStyles = makeStyles({
     width: "100%",
     height: "100%"
   },
-  //eslint-disable-next-line no-useless-computed-key
   wrap: {
-    ["@media (min-width:960px)"]: {
-      flexGrow: 0,
-      maxWidth: "50%",
-      flexBasis: "50%"
-    }
   },
   heading: {
     fontSize: "17px",

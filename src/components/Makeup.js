@@ -33,15 +33,13 @@ export const Makeup = () => {
               <Typography
                 variant="h4"
                 display="block"
-                classes={{ root: classes.lessonName }}
               >
                 {makeupDesc.name}
               </Typography>
               <Divider />
 
               <Typography
-                variant="h5"
-                className={classes.lessonPrice}
+                variant="h6"
               >
                 {makeupDesc.price}
               </Typography>

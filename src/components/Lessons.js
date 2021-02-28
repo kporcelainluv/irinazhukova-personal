@@ -25,7 +25,7 @@ export const Lessons = () => {
   const classes = lessonListStyles();
   return (
     <Grid container className={classes.list} justify={"center"}>
-      <Typography variant="h2" classes={{ root: classes.heading }}>
+      <Typography variant="h2">
         Уроки
       </Typography>
       {lessons.map(lesson => (

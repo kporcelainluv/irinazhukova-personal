@@ -42,21 +42,17 @@ export const Lesson = ({ lesson }) => {
         <Typography
           variant="h3"
           display={"block"}
-          classes={{ root: classes.lessonName }}
         >
           {name}
         </Typography>
         <Divider />
         <Typography
           variant="h5"
-          classes={{ root: classes.lessonIntro }}
         >
           {intro}
         </Typography>
         <Typography
-          variant="h5"
-          display={"block"}
-          classes={{ root: classes.lessonPrice }}
+          variant="h6"
         >
           {price}
         </Typography>
@@ -77,6 +73,7 @@ export const Lesson = ({ lesson }) => {
             heading={"Что мы делаем?"}
             list={description}
             base={base}
+            
           />
         )}
         {opened && learns && (

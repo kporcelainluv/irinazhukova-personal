@@ -7,11 +7,11 @@ import {projectStyles} from "./Styles";
 export const Description = ({ list, heading, base = undefined }) => {
   const classes = projectStyles();
   return (
-    <div>
-      <Typography variant="h5" display={"block"}  classes={{ root: classes.lessonsHeading }}>
+    <div style={{marginTop: '24px'}}>
+      <Typography variant="h5">
         {heading}
       </Typography>
-      <List display={"block"} disablePadding={true}>
+      <List disablePadding={true}>
         {list.map((element, index) => {
           return (
             <ListItem className={classes.listItem} key={element}>

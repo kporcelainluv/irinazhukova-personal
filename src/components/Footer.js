@@ -81,7 +81,7 @@ export const Footer = () => {
         </Grid>
       </Box>
 
-      <Typography variant="h5" display={"block"} className={styles.copyright}>
+      <Typography variant="h5" display={"block"}>
         © 2021 Ирина Жукова
       </Typography>
     </Container>

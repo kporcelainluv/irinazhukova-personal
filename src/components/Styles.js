@@ -6,18 +6,21 @@ export const theme = createMuiTheme();
 theme.typography.h2 = {
     fontSize: '32px',
     fontWeight: 400,
+    marginBottom: '24px',
 };
 theme.typography.h3 = {
     fontSize: '28px',
     lineHeight: "35px",
     letterSpacing: "-0.2px",
     fontWeight: 400,
+    margin: '6px 0',
 };
 theme.typography.h4 = {
     fontSize: '24px',
     lineHeight: "34px",
     letterSpacing: "-0.2px",
     fontWeight: 400,
+    margin: '6px 0 0',
 };
 theme.typography.h5 = {
     fontSize: '15px',
@@ -25,6 +28,15 @@ theme.typography.h5 = {
     letterSpacing: "-0.09px",
     minHeight: "auto",
     fontWeight: 400,
+    margin: '6px 0',
+};
+theme.typography.h6 = {
+    fontSize: '15px',
+    lineHeight: "19px",
+    letterSpacing: "-0.09px",
+    minHeight: "auto",
+    fontWeight: 600,
+    margin: '6px 0 18px',
 };
 
 export const projectStyles = makeStyles({
@@ -32,7 +44,7 @@ paper: {
     width: '280px',
     boxShadow: "none",
     fontFamily: "Tahoma, sans-serif",
-    marginBottom: "24px",
+    marginBottom: "36px",
     fontDisplay: 'swap'
 },
 lessonName: {
@@ -77,8 +89,6 @@ listItem: {
 },
 logo: {
     objectFit: "cover",
-    height: '40px',
-}
-
-
+    height: '50px',
+},
 });

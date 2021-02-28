@@ -19,7 +19,7 @@ export const Header = () => {
                     alt="логотип визажиста в ярославле ирины жуковой"
                     className={classes.logo}
                     width={84}
-                    height={40}
+                    height={50}
                 />
             </picture>
         </Box>

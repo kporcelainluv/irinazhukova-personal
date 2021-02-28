@@ -16,23 +16,23 @@ const lessonStyles = makeStyles({
   },
   lessonName: {
     fontSize: "28px",
-    lineHeight: "34px",
+    lineHeight: "35px",
     letterSpacing: "-0.2px",
-    margin: "10px 0"
+    margin: "12px 0 6px"
   },
   lessonIntro: {
     fontSize: "15px",
-    lineHeight: "22px",
+    lineHeight: "19px",
     letterSpacing: "-0.09px",
     minHeight: "auto",
-    margin: "10px 0"
+    margin: "12px 0 6px"
   },
   lessonPrice: {
     fontSize: "16px",
     fontWeight: "600",
     lineHeight: "28px",
     textTransform: "uppercase",
-    marginBottom: " 27px"
+    marginBottom: "12px"
   },
   lessonButton: {
     margin: "auto",
@@ -42,7 +42,8 @@ const lessonStyles = makeStyles({
     textTransform: "uppercase",
     textAlign: "center",
     cursor: "pointer",
-    width: "100%"
+    width: "100%",
+    backgroundColor: '#f2f2f2'
   },
   additionalInfo: {},
   img: {
@@ -109,7 +110,7 @@ export const Lesson = ({ lesson }) => {
 
         {opened && description && (
           <Description
-            heading={" Что мы делаем? "}
+            heading={"Что мы делаем?"}
             list={description}
             base={base}
           />

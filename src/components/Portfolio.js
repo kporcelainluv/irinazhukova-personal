@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
 
 const portfolioStyles = makeStyles({
   wrapper: {
@@ -28,7 +27,8 @@ const portfolioStyles = makeStyles({
     textTransform: "uppercase",
     color: "#474745",
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginBottom: '12px'
   },
   subheading: {
     color: "#474745",
@@ -45,14 +45,7 @@ export const InstaGrid = withInstagramFeed(({ media, account }) => {
   const styles = portfolioStyles();
   return (
     <div>
-      <Typography className={styles.heading}>инстаграм</Typography>
-      <Link
-        underline={"none"}
-        className={styles.subheading}
-        href={"https://www.instagram.com/zhukovairinal/"}
-      >
-        @zhukovairinal
-      </Link>
+      <Typography className={styles.heading}>INSTAGRAM</Typography>
       <Grid container className={styles.wrapper}>
         {media &&
           media.map(({ displayImage, id, postLink, accessibilityCaption }) => (

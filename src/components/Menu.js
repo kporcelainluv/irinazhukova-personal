@@ -15,7 +15,7 @@ const menuStyles = makeStyles({
   },
   closeButton: {
     position: "absolute",
-    top: "5px",
+    top: "6px",
     right: 0
   }
 });

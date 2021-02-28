@@ -10,10 +10,10 @@ const lessonListStyles = makeStyles({
     lineHeight: "34px",
     letterSpacing: "-0.2px",
     width: " 280px",
-    margin: "20px auto 10px"
+    margin: "24px auto 6px"
   },
   listItem: {
-    padding: "6px 16px 6px 0"
+    padding: "6px 12px 6px 0"
   }
 });
 export const Description = ({ list, heading, base = undefined }) => {
@@ -23,7 +23,7 @@ export const Description = ({ list, heading, base = undefined }) => {
       <Typography variant="h2" display={"block"} className={classes.heading}>
         {heading}
       </Typography>
-      <List variant="h3" display={"block"}>
+      <List variant="h3" display={"block"} disablePadding={true}>
         {list.map((element, index) => {
           return (
             <ListItem className={classes.listItem} key={element}>

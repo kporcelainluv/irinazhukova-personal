@@ -55,12 +55,6 @@ export const Footer = () => {
         root: styles.container
       }}
     >
-      <img
-        src={logo}
-        alt="логотип визажиста ирины жуковой"
-        height={50}
-        width={104}
-      />
       <Link
         href="tel:+79036911638"
         classes={{
@@ -68,7 +62,7 @@ export const Footer = () => {
         }}
         underline="none"
       >
-        +7 (903) 691 16 38
+        +7 (903) 691-16-38
       </Link>
       <Box display="flex" justifyContent="center">
         <Grid

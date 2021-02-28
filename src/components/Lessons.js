@@ -9,16 +9,16 @@ import { Lesson } from "./Lesson";
 const lessonListStyles = makeStyles({
   list: {
     flexGrow: 1,
-    marginTop: "20px"
+    marginTop: "24px"
   },
   heading: {
     fontFamily: "Tahoma, sans-serif",
-    fontSize: "34px",
-    lineHeight: "34px",
+    fontSize: "32px",
+    lineHeight: "40px",
     marginTop: "8px",
     letterSpacing: "-0.2px",
-    width: " 280px",
-    margin: "0 auto 30px"
+    width: "280px",
+    margin: "0 auto 36px"
   }
 });
 

@@ -3,57 +3,35 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Divider from "@material-ui/core/Divider";
-import Button from "@material-ui/core/Button";
 
 import { makeupDesc } from "../consts";
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     marginTop: "40px",
-    marginBottom: "65px"
   },
   paper: {
     width: 280,
     boxShadow: "none",
-    marginBottom: "65px"
   },
   lessonName: {
     fontSize: "28px",
-    lineHeight: "34px",
+    lineHeight: "35px",
     letterSpacing: "-0.2px",
-    margin: "10px 0"
-  },
-  lessonIntro: {
-    fontSize: "15px",
-    lineHeight: "22px",
-    letterSpacing: "-0.09px",
-    minHeight: "auto",
-    margin: "10px 0"
+    margin: "12px 0 6px"
   },
   lessonPrice: {
     fontSize: "16px",
     fontWeight: "600",
-    lineHeight: "28px",
+    lineHeight: "20px",
     textTransform: "uppercase",
-    marginBottom: " 27px"
+    margin: "6px 0 24px"
   },
-  lessonButton: {
-    margin: "auto",
-    lineHeight: "29px",
-    border: "none",
-    display: "flex",
-    textTransform: "uppercase",
-    textAlign: "center",
-    cursor: "pointer",
-    width: "100%"
-  },
-
+  
   listItem: {
-    padding: "6px 16px 6px 0"
+    padding: "6px 12px 6px 0"
   },
   img: {
     objectFit: "cover"

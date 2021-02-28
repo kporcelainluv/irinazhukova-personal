@@ -17,7 +17,7 @@ const appStyles = makeStyles({
     maxWidth: "320px"
   },
   buttonOpen: { position: "absolute", right: 0, top: 20 },
-  block: { paddingTop: "18px" }
+  block: { paddingTop: "24px" }
 });
 
 export const App = () => {
@@ -36,7 +36,7 @@ export const App = () => {
       <CssBaseline />
 
       <Container maxWidth="xl" classes={{ root: styles.container }}>
-        <Box display="flex" justifyContent="center" className={styles.block}>
+        <Box display="flex" className={styles.block} justifyContent="center">
           <Header
             handleClick={handleClick}
             handleClose={handleClose}

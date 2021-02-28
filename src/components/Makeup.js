@@ -15,13 +15,21 @@ export const Makeup = () => {
         <Grid container justify={"center"}>
           <Grid>
             <Paper className={classes.paper}>
-              <img
-                src={makeupDesc.imgLink}
-                alt=""
-                height={280}
-                width={280}
-                className={classes.img}
-              />
+              <picture>
+                <source
+                    type="image/webp"
+                    media="(min-width: 320px)"
+                    srcSet={makeupDesc.webpImg}
+                />
+                <img
+                    src={makeupDesc.imgLink}
+                    alt={makeupDesc.alt}
+                    height={280}
+                    width={280}
+                    className={classes.img}
+                />
+              </picture>
+             
               <Typography
                 variant="h2"
                 display="block"

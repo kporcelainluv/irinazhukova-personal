@@ -15,7 +15,9 @@ export const Lesson = ({ lesson }) => {
     description,
     learns,
     imgLink,
-    base = undefined
+    base = undefined,
+    webpImg,
+    alt
   } = lesson;
   const classes = projectStyles();
 
@@ -23,13 +25,20 @@ export const Lesson = ({ lesson }) => {
   return (
     <Grid container justify={"center"}>
       <Paper className={classes.paper}>
-        <img
-          src={imgLink}
-          alt=""
-          height={280}
-          width={280}
-          className={classes.img}
-        />
+        <picture>
+          <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcSet={webpImg}
+          />
+          <img
+              src={imgLink}
+              alt={alt}
+              height={280}
+              width={280}
+              className={classes.img}
+          />
+        </picture>
         <Typography
           variant="h2"
           display={"block"}

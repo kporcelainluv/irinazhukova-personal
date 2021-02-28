@@ -12,13 +12,12 @@ const lessonListStyles = makeStyles({
     marginTop: "24px"
   },
   heading: {
-    fontFamily: "Tahoma, sans-serif",
     fontSize: "32px",
     lineHeight: "40px",
     marginTop: "8px",
     letterSpacing: "-0.2px",
     width: "280px",
-    margin: "0 auto 36px"
+    margin: "0 auto 24px"
   }
 });
 

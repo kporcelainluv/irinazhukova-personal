@@ -5,7 +5,8 @@ paper: {
     width: '280px',
     boxShadow: "none",
     fontFamily: "Tahoma, sans-serif",
-    marginBottom: "24px"
+    marginBottom: "24px",
+    fontDisplay: 'swap'
 },
 lessonName: {
     fontSize: "28px",

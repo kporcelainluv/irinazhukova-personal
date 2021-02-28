@@ -47,7 +47,7 @@ export const App = () => {
         </Box>
         <Makeup />
         <Lessons />
-        <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
+        <InstaGrid account="zhukovairinal" numberOfMediaElements={8} />
         <Footer />
       </Container>
       </ThemeProvider>

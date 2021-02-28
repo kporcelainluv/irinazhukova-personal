@@ -52,7 +52,7 @@ export const InstaGrid = withInstagramFeed(({ media, account }) => {
               className={styles.wrap}
             >
               <ButtonBase
-                href={postLink || `https://www.instagram.com/${account}/`}
+                href={postLink || `https://www.instagram.com/zhukovairinal/`}
               >
                 <img
                   src={displayImage}

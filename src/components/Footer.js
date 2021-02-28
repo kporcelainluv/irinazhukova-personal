@@ -7,7 +7,6 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
 import { contacts } from "../consts";
-import logo from "../img/iz.png";
 
 const footerStyles = makeStyles({
   container: {
@@ -82,7 +81,7 @@ export const Footer = () => {
         </Grid>
       </Box>
 
-      <Typography variant="h6" display={"block"} className={styles.copyright}>
+      <Typography variant="h5" display={"block"} className={styles.copyright}>
         © 2021 Ирина Жукова
       </Typography>
     </Container>

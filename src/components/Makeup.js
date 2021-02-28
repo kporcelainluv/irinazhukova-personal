@@ -55,7 +55,7 @@ export const Makeup = () => {
               />
               <Typography
                 variant="h2"
-                display={"block"}
+                display="block"
                 classes={{ root: classes.lessonName }}
               >
                 {makeupDesc.name}
@@ -63,8 +63,8 @@ export const Makeup = () => {
               <Divider />
 
               <Typography
-                variant="h4"
-                display={"block"}
+                variant="h3"
+                display="block"
                 className={classes.lessonPrice}
               >
                 {makeupDesc.price}

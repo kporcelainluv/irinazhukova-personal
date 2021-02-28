@@ -1,7 +1,7 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
-export const theme = createMuiTheme();
+export const theme = createMuiTheme({ shadows: ["none"]});
 
 theme.typography.h2 = {
     fontSize: '32px',
@@ -42,7 +42,6 @@ theme.typography.h6 = {
 export const projectStyles = makeStyles({
 paper: {
     width: '280px',
-    boxShadow: "none",
     fontFamily: "Tahoma, sans-serif",
     marginBottom: "36px",
     fontDisplay: 'swap'

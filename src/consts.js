@@ -2,11 +2,11 @@ import img2 from './img/2.JPG'
 import img5 from './img/5.JPG'
 import img7 from './img/7.JPG'
 
-export const makeupDesc = [{
+export const makeupDesc = {
   name: "Макияж",
   price: "3500 руб / 1 чаc",
   imgLink: img7
-}];
+};
 
 export const lessons = [
   {

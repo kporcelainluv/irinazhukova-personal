@@ -14,6 +14,11 @@ const portfolioStyles = makeStyles({
     height: "100%"
   },
   wrap: {
+    ["@media (min-width:960px)"]: {
+      flexGrow: 0,
+      maxWidth: "50%",
+      flexBasis: "50%"
+    }
   },
   heading: {
     fontSize: "17px",

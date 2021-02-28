@@ -22,13 +22,6 @@ export const Header = () => {
                     height={40}
                 />
             </picture>
-          <img
-            src={logo}
-            alt="логотип визажиста в ярославле ирины жуковой"
-            className={classes.logo}
-            width={84}
-            height={40}
-          />
         </Box>
       );
 };

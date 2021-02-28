@@ -89,7 +89,7 @@ export const Footer = () => {
       </Box>
 
       <Typography variant="h6" display={"block"} className={styles.copyright}>
-        © 2020 Ирина Жукова
+        © 2021 Ирина Жукова
       </Typography>
     </Container>
   );

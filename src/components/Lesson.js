@@ -1,55 +1,11 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import { Description } from "./Description";
-
-const lessonStyles = makeStyles({
-  paper: {
-    width: 280,
-    boxShadow: "none",
-    fontFamily: "Tahoma, sans-serif",
-    marginBottom: "65px"
-  },
-  lessonName: {
-    fontSize: "28px",
-    lineHeight: "35px",
-    letterSpacing: "-0.2px",
-    margin: "12px 0 6px"
-  },
-  lessonIntro: {
-    fontSize: "15px",
-    lineHeight: "19px",
-    letterSpacing: "-0.09px",
-    minHeight: "auto",
-    margin: "12px 0 6px"
-  },
-  lessonPrice: {
-    fontSize: "16px",
-    fontWeight: "600",
-    lineHeight: "28px",
-    textTransform: "uppercase",
-    marginBottom: "12px"
-  },
-  lessonButton: {
-    margin: "auto",
-    lineHeight: "29px",
-    border: "none",
-    display: "flex",
-    textTransform: "uppercase",
-    textAlign: "center",
-    cursor: "pointer",
-    width: "100%",
-    backgroundColor: '#f2f2f2'
-  },
-  additionalInfo: {},
-  img: {
-    objectFit: "cover"
-  }
-});
+import {projectStyles} from "./Styles";
 
 export const Lesson = ({ lesson }) => {
   const {
@@ -61,7 +17,7 @@ export const Lesson = ({ lesson }) => {
     imgLink,
     base = undefined
   } = lesson;
-  const classes = lessonStyles();
+  const classes = projectStyles();
 
   const [opened, setOpened] = useState(false);
   return (

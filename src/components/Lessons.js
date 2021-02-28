@@ -25,7 +25,7 @@ const lessonListStyles = makeStyles({
 export const Lessons = () => {
   const classes = lessonListStyles();
   return (
-    <Grid container className={classes.list} spacing={2} justify={"center"}>
+    <Grid container className={classes.list} justify={"center"}>
       <Typography variant="h2" className={classes.heading}>
         Уроки
       </Typography>

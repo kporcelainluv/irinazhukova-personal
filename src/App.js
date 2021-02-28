@@ -17,7 +17,7 @@ const appStyles = makeStyles({
     maxWidth: "320px"
   },
   buttonOpen: { position: "absolute", right: 0, top: 20 },
-  block: { paddingTop: "24px" }
+  block: { padding: "24px 0" }
 });
 
 export const App = () => {

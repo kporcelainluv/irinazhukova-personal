@@ -1,22 +1,16 @@
 import React from "react";
 import logo from "../img/iz.png";
 import Box from "@material-ui/core/Box";
-import { makeStyles } from "@material-ui/core/styles";
+import {projectStyles} from "./Styles";
 
-const useStyles = makeStyles({
-    img: {
-        objectFit: "cover",
-        height: '40px',
-    }
-});
 export const Header = () => {
-    const classes = useStyles();
+    const classes = projectStyles();
       return (
         <Box>
           <img
             src={logo}
             alt="логотип визажиста в ярославле ирины жуковой"
-            className={classes.img}
+            className={classes.logo}
             width={84}
             height={40}
           />

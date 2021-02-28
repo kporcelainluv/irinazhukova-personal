@@ -1,9 +1,5 @@
-import img1 from './img/1.JPG'
 import img2 from './img/2.JPG'
-import img3 from './img/3.JPG'
-import img4 from './img/4.JPG'
 import img5 from './img/5.JPG'
-import img6 from './img/6.JPG'
 import img7 from './img/7.JPG'
 
 export const makeupDesc = [{

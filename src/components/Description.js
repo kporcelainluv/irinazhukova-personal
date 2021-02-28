@@ -8,7 +8,7 @@ export const Description = ({ list, heading, base = undefined }) => {
   const classes = projectStyles();
   return (
     <div>
-      <Typography variant="h2" display={"block"}  classes={{ root: classes.lessonsHeading }}>
+      <Typography variant="h5" display={"block"}  classes={{ root: classes.lessonsHeading }}>
         {heading}
       </Typography>
       <List display={"block"} disablePadding={true}>

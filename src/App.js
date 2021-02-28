@@ -8,6 +8,8 @@ import { Lessons } from "./components/Lessons";
 import { Makeup } from "./components/Makeup";
 import { Footer } from "./components/Footer";
 import { InstaGrid } from "./components/Portfolio";
+import {theme} from "./components/Styles";
+import {ThemeProvider} from "@material-ui/styles";
 
 const appStyles = makeStyles({
   container: {
@@ -34,7 +36,7 @@ export const App = () => {
   return (
     <Fragment>
       <CssBaseline />
-
+      <ThemeProvider theme={theme}>
       <Container maxWidth="xl" classes={{ root: styles.container }}>
         <Box display="flex" className={styles.block} justifyContent="center">
           <Header
@@ -48,6 +50,7 @@ export const App = () => {
         <InstaGrid account="zhukovairinal" numberOfMediaElements={6} />
         <Footer />
       </Container>
+      </ThemeProvider>
     </Fragment>
   );
 };

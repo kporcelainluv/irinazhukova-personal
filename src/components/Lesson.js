@@ -40,7 +40,7 @@ export const Lesson = ({ lesson }) => {
           />
         </picture>
         <Typography
-          variant="h2"
+          variant="h3"
           display={"block"}
           classes={{ root: classes.lessonName }}
         >
@@ -48,14 +48,13 @@ export const Lesson = ({ lesson }) => {
         </Typography>
         <Divider />
         <Typography
-          variant="h3"
-          display={"block"}
+          variant="h5"
           classes={{ root: classes.lessonIntro }}
         >
           {intro}
         </Typography>
         <Typography
-          variant="h4"
+          variant="h5"
           display={"block"}
           classes={{ root: classes.lessonPrice }}
         >

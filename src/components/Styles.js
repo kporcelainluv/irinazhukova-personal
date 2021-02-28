@@ -1,4 +1,31 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+
+export const theme = createMuiTheme();
+
+theme.typography.h2 = {
+    fontSize: '32px',
+    fontWeight: 400,
+};
+theme.typography.h3 = {
+    fontSize: '28px',
+    lineHeight: "35px",
+    letterSpacing: "-0.2px",
+    fontWeight: 400,
+};
+theme.typography.h4 = {
+    fontSize: '24px',
+    lineHeight: "34px",
+    letterSpacing: "-0.2px",
+    fontWeight: 400,
+};
+theme.typography.h5 = {
+    fontSize: '15px',
+    lineHeight: "19px",
+    letterSpacing: "-0.09px",
+    minHeight: "auto",
+    fontWeight: 400,
+};
 
 export const projectStyles = makeStyles({
 paper: {
@@ -9,20 +36,17 @@ paper: {
     fontDisplay: 'swap'
 },
 lessonName: {
-    fontSize: "28px",
     lineHeight: "35px",
     letterSpacing: "-0.2px",
     margin: "12px 0 6px"
 },
 lessonIntro: {
-    fontSize: "15px",
     lineHeight: "19px",
     letterSpacing: "-0.09px",
     minHeight: "auto",
     margin: "12px 0 6px"
 },
 lessonPrice: {
-    fontSize: "16px",
     fontWeight: "600",
     lineHeight: "28px",
     textTransform: "uppercase",
@@ -43,7 +67,6 @@ img: {
     objectFit: "cover"
 }, 
 lessonsHeading: {
-    fontSize: "24px",
     lineHeight: "34px",
     letterSpacing: "-0.2px",
     width: " 280px",
